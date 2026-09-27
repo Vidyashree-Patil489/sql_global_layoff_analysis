@@ -61,22 +61,23 @@ The cleaned dataset is stored in:
 `layoffs_staging2`
 
 ---
-
 ## 📊 Exploratory Data Analysis
 
-The EDA explores questions such as:
+The EDA explores trends and patterns in the layoffs dataset through questions such as:
 
 - What was the largest single layoff event?
 - Which companies had the highest total layoffs?
 - Which countries and locations had the most layoffs?
-- How did layoffs change by year?
+- How did layoffs change by year and month?
 - Which industries experienced the most layoffs?
 - Which company stages had the highest number of layoffs?
-- Which companies had the most layoffs in each year?
-- How did layoffs change month by month?
-- What is the cumulative number of layoffs over time?
-- Which records had the highest percentage of employees laid off?
-
+- Which companies had the most layoffs within each industry?
+- How did layoffs change compared with the previous year?
+- What percentage of total layoffs came from the top 10 companies?
+- How did average layoffs differ across funding bands?
+- Which companies had layoffs across multiple years?
+- Which location and industry combinations had the highest layoffs?
+- Which companies had 100% of their employees laid off?
 ---
 
 ## 🧠 SQL Concepts Used
@@ -94,8 +95,11 @@ This project uses a variety of SQL concepts, including:
 - Window functions
 - `ROW_NUMBER()`
 - `DENSE_RANK()`
+- `LAG()`
 - `SUM() OVER()`
+- `CASE`
 - Date functions
+- `COUNT(DISTINCT)`
 - Data cleaning and transformation
 - Staging tables
 
