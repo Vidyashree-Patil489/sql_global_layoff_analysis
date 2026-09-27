@@ -90,16 +90,14 @@ This project uses a variety of SQL concepts, including:
 - `ORDER BY`
 - `LIMIT`
 - Aggregate functions
-- `CASE` / conditional logic
 - Common Table Expressions (CTEs)
 - Window functions
 - `ROW_NUMBER()`
 - `DENSE_RANK()`
 - `SUM() OVER()`
 - Date functions
-- `JOIN`
 - Data cleaning and transformation
-- Temporary/staging tables
+- Staging tables
 
 ---
 
@@ -111,27 +109,34 @@ sql_global_layoff_analysis/
 ├── 01_Data_Cleaning.sql
 ├── 02_EDA.sql
 └── layoffs.csv
+```
 
-01_Data_Cleaning.sql
+### `01_Data_Cleaning.sql`
 
 Contains the complete data cleaning process, including duplicate removal, standardization, date conversion, and missing-value handling.
 
-02_EDA.sql
+### `02_EDA.sql`
 
 Contains SQL queries used to explore trends and patterns in the cleaned dataset.
 
-layoffs.csv
+### `layoffs.csv`
 
 The raw dataset used for the analysis.
 
-▶️ How to Run
-Import layoffs.csv into MySQL.
-Create/use the world_layoffs database.
-Create the layoffs table using the dataset structure.
-Run 01_Data_Cleaning.sql.
-Run 02_EDA.sql.
-Explore the results in MySQL Workbench.
-📚 Reference
+---
+
+## ▶️ How to Run
+
+1. Import `layoffs.csv` into MySQL.
+2. Create/use the `world_layoffs` database.
+3. Create the `layoffs` table using the dataset structure.
+4. Run `01_Data_Cleaning.sql`.
+5. Run `02_EDA.sql`.
+6. Explore the results in MySQL Workbench.
+
+---
+
+## 📚 Reference
 
 This project was developed as a hands-on SQL learning project and was adapted to work with the current version of the layoffs dataset.
 
@@ -140,11 +145,15 @@ The project structure and learning approach were inspired by Alex The Analyst's 
 Reference:
 
 Alex The Analyst — MySQL YouTube Series
+
 https://github.com/AlexTheAnalyst/MySQL-YouTube-Series
 
-👩‍💻 Author
+---
 
-Vidyashree Patil
+## 👩‍💻 Author
+
+**Vidyashree Patil**
 
 GitHub:
+
 https://github.com/Vidyashree-Patil489
